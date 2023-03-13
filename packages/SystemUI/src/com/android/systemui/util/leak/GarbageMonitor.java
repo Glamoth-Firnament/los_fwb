@@ -89,7 +89,6 @@ public class GarbageMonitor implements Dumpable {
     // Heap tracking: watch the current memory levels and update the MemoryTile if available.
     // Off by default unless you set the appropriate sysprop on a userdebug device.
     public static final boolean HEAP_TRACKING_ENABLED = Build.IS_ENG;
-            && SystemProperties.getBoolean("debug.enable_heap_tracking", false);
 
     // Tell QSTileHost.java to toss this into the default tileset?
     public static final boolean ADD_MEMORY_TILE_TO_DEFAULT_ON_DEBUGGABLE_BUILDS = false;
